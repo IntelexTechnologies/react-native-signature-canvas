@@ -184,7 +184,7 @@ export default `
 
     var dataURL = '<%dataURL%>';
 
-    if (dataURL) signaturePad.fromDataURL(dataURL);
+    if (dataURL) setTimeout(() => {signaturePad.fromDataURL(dataURL)}, 800);
 
     clearButton.addEventListener("click", clearSignature );
 
